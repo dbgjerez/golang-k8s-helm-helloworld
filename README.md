@@ -10,4 +10,5 @@ go run app.go
 |Endpoint|Comment|
 |--|--|
 |/api/v1/health|Healtcheck|
+|/api/v1/grettings|Hello world message|
 |not found|404 error code|
