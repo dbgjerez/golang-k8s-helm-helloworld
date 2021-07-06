@@ -7,10 +7,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type HealthController struct {
+type HealthcheckHandler struct {
 }
 
-func HealthControllerHandler() func(c *gin.Context) {
+func HealthcheckGetHandler() func(c *gin.Context) {
 	return func(c *gin.Context) {
 		h := dto.Health{}
 		h.Status = dto.HealhStatusUp
