@@ -11,7 +11,8 @@ func main() {
 
 	v1 := router.Group("/api/v1")
 	{
-		v1.GET("/health", interfaces.HealthControllerHandler())
+		v1.GET("/health", interfaces.HealthcheckGetHandler())
+		v1.GET("/grettings", interfaces.MessageGetHandler())
 	}
 
 	router.NoRoute(func(c *gin.Context) {
