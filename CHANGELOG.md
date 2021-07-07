@@ -2,6 +2,15 @@
 ## [Unreleased]
 
 
+<a name="v0.4"></a>
+## [v0.4] - 2021-07-07
+### Docker
+- docker changed image name
+
+### Run
+- run docker
+
+
 <a name="v0.3"></a>
 ## [v0.3] - 2021-07-06
 ### Changelog
@@ -34,6 +43,7 @@
 - Basic readme hello world app
 
 
-[Unreleased]: https://github.com/dbgjerez/golang-k8s-helm-helloworld/compare/v0.3...HEAD
+[Unreleased]: https://github.com/dbgjerez/golang-k8s-helm-helloworld/compare/v0.4...HEAD
+[v0.4]: https://github.com/dbgjerez/golang-k8s-helm-helloworld/compare/v0.3...v0.4
 [v0.3]: https://github.com/dbgjerez/golang-k8s-helm-helloworld/compare/v0.2...v0.3
 [v0.2]: https://github.com/dbgjerez/golang-k8s-helm-helloworld/compare/v0.1...v0.2
