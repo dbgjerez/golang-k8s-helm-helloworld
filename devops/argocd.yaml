@@ -17,5 +17,7 @@ spec:
   project: default
   syncPolicy:
     syncOptions:
-      - PrunePropagationPolicy=foreground
-project: default
+      - CreateNamespace=true
+    automated:
+      prune: true
+      selfHeal: false
