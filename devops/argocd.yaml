@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test2
+spec:
+  destination:
+    name: ''
+    namespace: test
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: helm-chart
+    repoURL: 'https://github.com/dbgjerez/golang-k8s-helm-helloworld'
+    targetRevision: develop
+    helm:
+      valueFiles:
+        - values.yaml
+  project: default
+  syncPolicy:
+    syncOptions:
+      - PrunePropagationPolicy=foreground
+project: default
