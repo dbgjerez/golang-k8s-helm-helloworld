@@ -18,4 +18,3 @@ spec:
   syncPolicy:
     syncOptions:
       - PrunePropagationPolicy=foreground
-project: default
