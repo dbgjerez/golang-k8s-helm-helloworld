@@ -10,7 +10,7 @@ go build app.go
 ## Docker
 To build a docker image is mandatory to have installed Docker or use something like buildah. I have used my docker's user (b0rr3g0), you should change $USER for your own user.
 ```bash
-echo "docker build -t $USER/golang-hello-world ."
+docker build -t $USER/golang-hello-world .
 ```
 
 # Run

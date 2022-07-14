@@ -2,6 +2,15 @@
 ## [Unreleased]
 
 
+<a name="v0.5"></a>
+## [v0.5] - 2022-07-14
+### Makefile
+- New Makefile
+
+### Metrics
+- Prometheus support
+- Library
+
 <a name="v0.4"></a>
 ## [v0.4] - 2021-07-07
 ### Docker
