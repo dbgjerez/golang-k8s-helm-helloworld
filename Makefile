@@ -16,6 +16,8 @@ help: ## Show opstions and short description
 build: ## Build the golang application and generate the image
 	@podman build -t ${HUB}/${IMAGE}:${VERSION} . -f ${CONTAINER}
 
-.PHONY: container 
-image-push: image ## Clean, build, generate the image and upload it
-	podman push ${HUB}/${IMAGE}:${VERSION}
+.PHONY: image
+image-push: build  ## Clean, build, generate the image and upload it
+	@podman tag ${HUB}/${IMAGE}:${VERSION} ${HUB}/${IMAGE}:latest
+	@podman push ${HUB}/${IMAGE}:${VERSION}
+	@podman push ${HUB}/${IMAGE}:latest

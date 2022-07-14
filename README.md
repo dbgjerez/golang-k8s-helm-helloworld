@@ -3,14 +3,25 @@ Application used to learn golang or anothers frameworks and tools like Kubernete
 
 # Build
 ## Golang
+
+With Golang: 
+
 ```bash
 go build app.go
 ```
 
-## Docker
-To build a docker image is mandatory to have installed Docker or use something like buildah. I have used my docker's user (b0rr3g0), you should change $USER for your own user.
+## Image
+
+I use podman to build the imagen, you can use podman, docker or whatever you want. I have used my docker's user (b0rr3g0), you should change $USER for your own user.
+
 ```bash
-docker build -t $USER/golang-hello-world .
+podman build -t $USER/golang-hello-world .
+```
+
+Another option is to use the Makefile, previus change the parameters:
+
+```bash
+make build
 ```
 
 # Run
@@ -20,17 +31,18 @@ go run app.go
 ```
 
 ## Docker
-It can be used my image (b0rr3g0/hello-world) or your own image. 
+It can be used my image (b0rr3g0/golang-hello-world) or your own image. 
 ```bash
 docker run -p 8080:8080 b0rr3g0/golang-hello-world
 ```
 
-## Helm
-[](https://github.com/dbgjerez/ms-helm-chart)
+## Helm/Kustomize
+[](https://github.com/dbgjerez/kustomize-vs-helm)
 
 # Endpoints
 |Endpoint|Comment|
 |--|--|
 |/api/v1/health|Healtcheck|
 |/api/v1/grettings|Hello world message|
+|/metrics|Prometheus metrics exporter|
 |not found|404 error code|
