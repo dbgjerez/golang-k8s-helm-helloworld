@@ -15,6 +15,8 @@ func main() {
 		v1.GET("/grettings", interfaces.MessageGetHandler())
 	}
 
+	router.GET("/metrics", interfaces.MetricsHandlerGetHandler())
+
 	router.NoRoute(func(c *gin.Context) {
 		c.JSON(404, gin.H{"msg": "Not found"})
 	})
