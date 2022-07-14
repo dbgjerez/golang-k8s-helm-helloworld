@@ -1,6 +1,10 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="v0.5.1"></a>
+## [v0.5.1] - 2022-07-14
+### Bugfix
+- Endpoint name should be ```Greetings```
 
 <a name="v0.5"></a>
 ## [v0.5] - 2022-07-14

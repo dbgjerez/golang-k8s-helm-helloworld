@@ -12,7 +12,7 @@ func main() {
 	v1 := router.Group("/api/v1")
 	{
 		v1.GET("/health", interfaces.HealthcheckGetHandler())
-		v1.GET("/grettings", interfaces.MessageGetHandler())
+		v1.GET("/greetings", interfaces.MessageGetHandler())
 	}
 
 	router.GET("/metrics", interfaces.MetricsHandlerGetHandler())

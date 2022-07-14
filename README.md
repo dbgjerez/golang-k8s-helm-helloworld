@@ -43,6 +43,6 @@ docker run -p 8080:8080 b0rr3g0/golang-hello-world
 |Endpoint|Comment|
 |--|--|
 |/api/v1/health|Healtcheck|
-|/api/v1/grettings|Hello world message|
+|/api/v1/greetings|Hello world message|
 |/metrics|Prometheus metrics exporter|
 |not found|404 error code|
