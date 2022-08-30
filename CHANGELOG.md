@@ -1,5 +1,11 @@
-<a name="unreleased"></a>
-## [Unreleased]
+<a name="v0.6"></a>
+## [v0.6] - 2022-08-30
+### Upgrade
+- Golang to 1.18 version
+- Gin to version 1.8.1
+### Container
+- Container to version 1.18-alpine
+
 
 <a name="v0.5.1"></a>
 ## [v0.5.1] - 2022-07-14
