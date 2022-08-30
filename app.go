@@ -8,6 +8,7 @@ import (
 
 func main() {
 	router := gin.Default()
+	router.SetTrustedProxies(nil)
 
 	v1 := router.Group("/api/v1")
 	{
