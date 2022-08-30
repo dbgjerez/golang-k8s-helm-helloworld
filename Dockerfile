@@ -1,7 +1,6 @@
 FROM golang:1.18-alpine
 
-ARG APP_NAME=golang-k8s-helm-helloworld
-
+ENV APP_NAME=golang-k8s-helm-helloworld
 ENV GIN_MODE=release
 ENV PORT=8080
 ENV WORKDIR=/go/src/app
