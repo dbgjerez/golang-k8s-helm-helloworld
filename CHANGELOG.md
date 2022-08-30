@@ -1,6 +1,3 @@
-<a name="unreleased"></a>
-## [Unreleased]
-
 <a name="v0.6"></a>
 ## [v0.6] - 2022-08-30
 ### Upgrade
